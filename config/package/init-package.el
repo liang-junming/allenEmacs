@@ -14,6 +14,8 @@
 
 
 (require 'init-company)
+(require 'init-helm)
+(require 'init-helm-themes)
 
 
 (provide 'init-package)
