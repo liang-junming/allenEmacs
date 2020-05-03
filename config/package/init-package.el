@@ -12,4 +12,8 @@
 (unless (package-installed-p 'use-package)
   (package-install 'use-package))
 
+
+(require 'init-company)
+
+
 (provide 'init-package)
