@@ -19,7 +19,9 @@
 	;; t => ivy  swiper => swiper
 	;; 还可以设置counsel-ag counsel-grep等命令的查找算法
 	ivy-re-builders-alist '((t . ivy--regex-ignore-order)
-			      (swiper . ivy--regex-ignore-order)))
+				(swiper . ivy--regex-ignore-order)))
+  ;; 默认快捷键
+  ;; "M-o" -> ivy-dispatching-done 列出可操作的action
   :bind (("C-x b" . ivy-switch-buffer)
 	 ;; 功能尚不明确
 	 ("C-c v" . ivy-push-view)
@@ -33,6 +35,7 @@
 	 ("C--" . ivy-avy)
 	 ;; 清空输入，可将当前结果作为候选继续输入关键字过滤，并且可连续使用，一步步缩小范围
 	 ("C-c SPC" . ivy-restrict-to-matches))
+
   :config
   (ivy-mode 1))
 
