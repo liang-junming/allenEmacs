@@ -14,8 +14,10 @@
 
 
 (require 'init-company)
-(require 'init-helm)
-(require 'init-helm-themes)
+(require 'init-ivy-swiper-counsel)
+(require 'init-avy)
+;;(require 'init-helm)
+;;(require 'init-helm-themes)
 
 
 (provide 'init-package)
