@@ -16,6 +16,7 @@
 (require 'init-company)
 (require 'init-ivy-swiper-counsel)
 (require 'init-avy)
+(require 'init-doom-themes)
 ;;(require 'init-helm)
 ;;(require 'init-helm-themes)
 
