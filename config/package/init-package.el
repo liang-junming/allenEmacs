@@ -18,6 +18,8 @@
 (require 'init-avy)
 (require 'init-doom-themes)
 (require 'init-multi-term)
+(require 'init-js2-mode)
+(require 'init-ace-window)
 ;;(require 'init-helm)
 ;;(require 'init-helm-themes)
 
