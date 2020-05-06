@@ -21,6 +21,7 @@
 (require 'init-js2-mode)
 (require 'init-ace-window)
 (require 'init-smartparens)
+(require 'init-basic)
 ;;(require 'init-helm)
 ;;(require 'init-helm-themes)
 
