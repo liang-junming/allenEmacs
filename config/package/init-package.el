@@ -27,6 +27,7 @@
 (require 'init-ace-window)
 (require 'init-smartparens)
 (require 'init-basic)
+(require 'init-ui)
 ;;(require 'init-helm)
 ;;(require 'init-helm-themes)
 
