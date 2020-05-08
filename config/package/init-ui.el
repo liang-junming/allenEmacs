@@ -13,10 +13,10 @@
   (all-the-icons-ivy-rich-mode 1))
 
 
-(use-package page-break-lines
-  :ensure t
-  :config
-  (turn-on-page-break-lines-mode))
+;;(use-package page-break-lines
+;;  :ensure t
+;;  :config
+;;  (turn-on-page-break-lines-mode))
 
 (use-package dashboard
   :ensure t 
