@@ -28,6 +28,7 @@
 (require 'init-smartparens)
 (require 'init-basic)
 (require 'init-ui)
+(require 'init-undo-tree)
 ;;(require 'init-helm)
 ;;(require 'init-helm-themes)
 
