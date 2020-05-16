@@ -3,9 +3,8 @@
 
 (use-package all-the-icons-dired
   :ensure t
-  :after (dired all-the-icons)
   :hook
-  ('dired-mode-hook . #'all-the-icons-dired-mode))
+  ('dired-mode . 'all-the-icons-dired-mode))
 
 (use-package all-the-icons-ivy-rich
   :ensure t
