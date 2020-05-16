@@ -41,7 +41,7 @@
 
 (use-package swiper
   :ensure t
-  :bind (("C-s" . swiper-isearch)))
+  :bind (("C-s" . swiper)))
 
 (use-package counsel
   :ensure t
@@ -143,6 +143,21 @@
 	    (ivy-rich-switch-buffer-path (:width (lambda (x) (ivy-rich-switch-buffer-shorten-path x (ivy-rich-minibuffer-width 0.3))))))
 	   :predicate
 	   (lambda (cand) (get-buffer cand))))))
+
+(use-package ivy-posframe
+  :ensure t
+  :init
+  (ivy-posframe-mode 1)
+  :custom
+  (ivy-posframe-parameters
+   '((left-fringe . 8)
+     (right-fringe . 8)))
+  (ivy-posframe-height-alist
+        '((swiper . 20)
+          (t . 30)))
+  (ivy-posframe-display-functions-alist
+        '((swiper . nil)
+          (t . ivy-posframe-display-at-frame-center))))
 
 
 (provide 'init-ivy-swiper-counsel)

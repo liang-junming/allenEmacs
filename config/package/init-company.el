@@ -12,5 +12,9 @@
   (global-company-mode)
   (add-to-list 'company-backends #'company-tabnine))
 
+(use-package company-box
+  :ensure t
+  :hook (company-mode . company-box-mode))
+
 
 (provide 'init-company)
