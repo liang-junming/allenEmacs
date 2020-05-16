@@ -14,6 +14,14 @@
 ;; 更改字体大小 16
 (set-face-attribute 'default nil :font "Courier New 16")
 
+;; Xingkai
+(set-fontset-font t 'han "Kaiti SC 14")
+
+;; 设置光标颜色和样式
+;; (setq-default cursor-type 'bar)
+(setq-default cursor-type 'box)
+(set-cursor-color "SeaGreen1")
+
 ;; 关闭文件自动备份
 (setq make-backup-files nil)
 
@@ -40,6 +48,16 @@
   scroll-down-aggressively 0.01
   scroll-preserve-screen-position 'always)
 
+;; 让'_'被视为单词的一部分
+(add-hook 'after-change-major-mode-hook (lambda () 
+                                          (modify-syntax-entry ?_ "w")))
+;; "-" 同上)
+(add-hook 'after-change-major-mode-hook (lambda () 
+                                          (modify-syntax-entry ?- "w")))
+
+;; 去除默认启动界面
+(setq inhibit-startup-message nil)
+
 ;; 设置F12开启全屏
 (defun fullscreen ()
   (interactive)
@@ -49,9 +67,11 @@
 (global-set-key [f12] 'fullscreen)
 
 ;;设置窗口位置
-(set-frame-position (selected-frame) 120 0)
+;;(set-frame-position (selected-frame) 0 0)
 ;;设置宽和高
-(set-frame-size (selected-frame) 140 70)
+;;(set-frame-size (selected-frame) maximized maximized)
 
+;; 窗口最大化
+(add-to-list 'default-frame-alist '(fullscreen . maximized))
 
 (provide 'init-normal)
