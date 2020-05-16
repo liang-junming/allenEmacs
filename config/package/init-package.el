@@ -29,6 +29,7 @@
 (require 'init-basic)
 (require 'init-ui)
 (require 'init-undo-tree)
+(require 'init-lsp)
 ;;(require 'init-helm)
 ;;(require 'init-helm-themes)
 

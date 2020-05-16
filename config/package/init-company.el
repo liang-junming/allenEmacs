@@ -1,13 +1,16 @@
 (use-package company
   :ensure t
   :init
-  (setq company-idle-delay 0.1)
+  (setq company-idle-delay 0)
+  (setq company-echo-delay 0)
   (setq company-show-numbers t)
   (setq company-tooltip-limit 15)
-  (setq company-minimum-prefix-length 2)
+  (setq company-minimum-prefix-length 1)
   (setq company-tooltip-align-annotations t)
   (setq company-tooltip-flip-when-above t)
   :config
-  (global-company-mode))
+  (global-company-mode)
+  (add-to-list 'company-backends #'company-tabnine))
+
 
 (provide 'init-company)
