@@ -17,6 +17,12 @@
 ;; 关闭文件自动备份
 (setq make-backup-files nil)
 
+;; 关闭锁文件
+(setq create-lockfiles nil)
+
+;; 总是加载最新的文件
+(setq load-prefer-newer t)
+
 ;; 高亮匹配的括号
 (add-hook 'emacs-lisp-mode-hook 'show-paren-mode)
 
