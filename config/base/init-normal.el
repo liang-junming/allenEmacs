@@ -1,4 +1,8 @@
 ;; 基础配置
+
+;; yes-or-no-p to y-or-n-p
+(fset 'yes-or-no-p 'y-or-n-p)
+
 ;; 关闭工具栏
 (tool-bar-mode -1)
 
