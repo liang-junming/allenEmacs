@@ -30,6 +30,7 @@
 (require 'init-ui)
 (require 'init-undo-tree)
 (require 'init-lsp)
+(require 'init-magit)
 ;;(require 'init-helm)
 ;;(require 'init-helm-themes)
 
