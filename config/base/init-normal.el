@@ -42,6 +42,11 @@
 (setq-default tab-width 4)
 (setq-default indent-tabs-mode nil)
 
+;; 设置超过一行内容换行显示
+(set-default 'truncate-lines nil)
+;; 部分major-mode需要单独设置
+(add-hook 'magit-mode-hook (lambda () (setq truncate-lines nil)))
+
 ;; 更友好和平滑的滚动
 (setq scroll-step 2
   scroll-margin 2
@@ -70,6 +75,7 @@
 
 (global-set-key [f12] 'fullscreen)
 
+(set-frame-parameter nil 'alpha '(85 .100))
 ;; 半透明
 (global-set-key [(f8)] 'loop-alpha)  ;;注意这行中的F8 , 可以改成你想要的按键
 (setq alpha-list '((100 100) (85 55) (65 45) (55 35)))
