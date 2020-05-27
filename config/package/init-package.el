@@ -18,6 +18,7 @@
   ;; To disable collection of benchmark data after init is done.
   (add-hook 'after-init-hook 'benchmark-init/deactivate))
 
+(require 'init-tools)
 (require 'init-company)
 (require 'init-ivy-swiper-counsel)
 (require 'init-avy)
@@ -30,7 +31,6 @@
 (require 'init-ui)
 (require 'init-undo-tree)
 (require 'init-lsp)
-(require 'init-magit)
 ;;(require 'init-helm)
 ;;(require 'init-helm-themes)
 
