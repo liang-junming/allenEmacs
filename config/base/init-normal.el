@@ -15,14 +15,13 @@
 ;; 高亮光标所在行
 (global-hl-line-mode +1)
 
-;; 更改字体大小 18
-(set-face-attribute 'default nil :font "Courier New 18")
+;; 更改字体大小 15
+(set-face-attribute 'default nil :font "Courier 15")
 ;; 加粗
 ;;(set-face-attribute 'default nil :font "Courier New Bold 18")
 
-
-;; Xingkai
-(set-fontset-font t 'han "Kaiti SC 14")
+;; 单独设置中文字体
+(set-fontset-font t 'han "Kaiti SC 18")
 
 ;; 设置光标颜色和样式
 ;; (setq-default cursor-type 'bar)
