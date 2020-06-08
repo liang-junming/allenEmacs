@@ -3,6 +3,8 @@
 ;; just comment it out by adding a semicolon to the start of the line.
 ;; You may delete these explanatory comments.
 
+;; emacs-native-comp 版本视乎要加这么一行，暂时不知道什么原因
+(setq comp-deferred-compilation t)
 
 ;; 递归遍历加载路径
 (defun add-subdirs-to-load-path(dir)
