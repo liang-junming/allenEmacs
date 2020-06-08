@@ -156,7 +156,7 @@
         '((swiper . 20)
           (t . 30)))
   (ivy-posframe-display-functions-alist
-        '((swiper . nil)
+        '((swiper . ivy-display-function-fallback)
           (t . ivy-posframe-display-at-frame-center))))
 
 
