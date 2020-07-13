@@ -9,8 +9,7 @@
   (setq company-tooltip-align-annotations t)
   (setq company-tooltip-flip-when-above t)
   :config
-  (global-company-mode)
-  (add-to-list 'company-backends #'company-tabnine))
+  (global-company-mode))
 
 (use-package company-box
   :ensure t
