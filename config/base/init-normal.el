@@ -100,3 +100,7 @@
 (add-to-list 'default-frame-alist '(fullscreen . maximized))
 
 (provide 'init-normal)
+
+;; 设置Mac meta键和super键
+(setq mac-option-modifier 'super
+      mac-command-modifier 'meta)
