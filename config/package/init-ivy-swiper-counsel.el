@@ -144,20 +144,20 @@
 	   :predicate
 	   (lambda (cand) (get-buffer cand))))))
 
-(use-package ivy-posframe
-  :ensure t
-  :init
-  (ivy-posframe-mode 1)
-  :custom
-  (ivy-posframe-parameters
-   '((left-fringe . 8)
-     (right-fringe . 8)))
-  (ivy-posframe-height-alist
-        '((swiper . 20)
-          (t . 30)))
-  (ivy-posframe-display-functions-alist
-        '((swiper . ivy-display-function-fallback)
-          (t . ivy-posframe-display-at-frame-center))))
+;;(use-package ivy-posframe
+;;  :ensure t
+;;  :init
+;;  (ivy-posframe-mode 1)
+;;  :custom
+;;  (ivy-posframe-parameters
+;;   '((left-fringe . 8)
+;;     (right-fringe . 8)))
+;;  (ivy-posframe-height-alist
+;;        '((swiper . 20)
+;;          (t . 30)))
+;;  (ivy-posframe-display-functions-alist
+;;        '((swiper . ivy-display-function-fallback)
+;;          (t . ivy-posframe-display-at-frame-center))))
 
 
 (provide 'init-ivy-swiper-counsel)
