@@ -77,7 +77,6 @@
 
 (global-set-key [f12] 'fullscreen)
 
-(set-frame-parameter nil 'alpha '(85 .100))
 ;; 半透明
 (global-set-key [(f8)] 'loop-alpha)  ;;注意这行中的F8 , 可以改成你想要的按键
 (setq alpha-list '((100 100) (85 55) (65 45) (55 35)))
