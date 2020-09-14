@@ -16,10 +16,11 @@
     :config
     (which-key-mode))
 
-(use-package company-lsp
-  :ensure t
-  :config
-  (push 'company-lsp company-backends))
+;;(use-package company-lsp
+;;  :ensure t
+;;  :config
+;;  (push 'company-lsp company-backends))
+
 ;; (use-package company-tabnine
 ;;  :ensure t
 ;;  :after 'company-mode 'company-tabnine-mode)
