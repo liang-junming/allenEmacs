@@ -31,6 +31,7 @@
 (require 'init-ui)
 (require 'init-undo-tree)
 (require 'init-lsp)
+(require 'init-flycheck)
 ;;(require 'init-helm)
 ;;(require 'init-helm-themes)
 
