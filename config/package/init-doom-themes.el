@@ -6,7 +6,7 @@
         doom-themes-enable-italic t) ; if nil, italics is universally disabled
   ;;(load-theme 'doom-fairy-floss t)
   ;;(load-theme 'doom-one t)
-  (load-theme 'doom-monokai-classic t)
+  (load-theme 'doom-monokai-spectrum t)
 
   ;; Enable flashing mode-line on errors
   (doom-themes-visual-bell-config)
